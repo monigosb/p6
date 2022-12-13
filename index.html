@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6_gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0.3em;
+            padding: 0.3mm;
+        }
+        img{
+            width: 100%;
+        }
+       
+        :root{
+            --rojo: #BE3434;
+            --negro: #0F0C0C;
+            --rosita: #F58080;
+            --txt: 'Roboto Condensed', sans-serif;;
+            }
+
+        h1{
+            font-family: var(--txt);
+            color: var(--negro);
+            font-weight: 300%;
+            font-size: 0.8em;
+    }
+            
+        h2{
+            font-family: var(--txt);
+            color: var(--rojo);
+            font-size: 1em;
+            font-weight: 700%;
+        }
+        p{
+            font-family: var(--txt);
+            color: var(--negro);
+            font-size: 0.7em;
+            font-weight: 300;
+        }
+
+        .gallery{
+            display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            
+            flex-basis: 18%;
+            flex-grow: 0.5em;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border: 0.1em solid var(--rojo)
+        }
+        .card_img:nth-child(1){
+        flex-grow: 0.3;
+
+            
+        }
+        .card_img{
+            width: 100%;
+            height: 270%;
+
+        }
+
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/01.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Da Vinci</h1>
+                    <h2>Mona Lisa</h2>
+                    <p> Hoy en día, la pintura se encuentra en el Louvre de París y su historia empezó entre los años 1503 y 1519 en Florencia, la ciudad italiana considerada la cuna del Renacimiento, donde Da Vinci pintó La Gioconda. Se dice que es un retrato de Lisa Gherardini, esposa de Francesco del Giocondo, pero también se ha rumoreado que se trata de la madre de Da Vinci, Caterina, o incluso que es un autorretrato del pintor. La fama de esta pintura no se basa únicamente en la técnica empleada o en su belleza, sino también en los misterios que la rodean.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/02.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Pablo Picasso</h1>
+                    <h2>Guernica</h2>
+                    <p>Los 3,49 metros de altura por los 7,77 metros de ancho lo convierten en uno de los cuadros más grandes pintados por el artista malagueño. Un auténtico gigante que magnifica más aun si cabe la obra, una de las más importantes del siglo XX que es testigo del bombardeo alemán a la ciudad del mismo nombre que la pintura en 1937 y que provocó casi 2.000 muertes. Pablo Picasso deseaba retransmitir el horror, pero especialmente el sufrimiento de los habitantes españoles durante la guerra civil del país.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/03.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Leonardo Da Vinci</h1>
+                    <h2>La Noche Estrellada</h2>
+                    <p>De hecho, el lienzo parece reflejar su turbulento estado mental del autor postimpresionista en ese momento, ya que el cielo nocturno cobra vida con remolinos y orbes de pinceles aplicados frenéticamente que brotan del yin y el yang de sus demonios personales y de su asombro por la naturaleza. Según comentaba el artista en una de sus cartas a su hermano Theo, esta era la visión del pueblo que él contemplaba por la madrugada desde su ventana. La gran estrella iluminada de blanco.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/04.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Leonardo Da Vinci</h1>
+                    <h2>La Última Cena</h2>
+                    <p>Fue encargada por Ludovico Sforza para el refectorio del Convento de Santa Maria delle Grazie en Milán, Italia y el artista no cobró por ella. Actualmente esta pintura mural se encuentra en la pared sobre la que se pintó originalmente. La escena recrea la última cena de Pascua entre Jesús y sus apóstoles.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/05.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Johannes Vermeer</h1>
+                    <h2>La Joven de Perla </h2>
+                    <p>Data de 1665 y tiene a la perla como punto focal del cuadro. La modelo es desconocida, aunque se ha especulado que podría haber sido la criada del artista que representó a la joven mirando a los ojos del espectador por encima de su hombro.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/06.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Klimnt</h1>
+                    <h2>El Beso</h2>
+                    <p>Sigue los cánones del simbolismo y representa un punto culminante de la "fase dorada" del artista entre 1899 y 1910 cuando usaba pan de oro, una técnica inspirada en un viaje de 1903 a la Basílica de San Vitale en Rávena, Italia, donde vio los famosos mosaicos bizantinos de la iglesia. </p>
+                </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
